@@ -1,0 +1,607 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+ /* style du body */
+ body{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  background-color: #c3c5ca;  
+}
+ 
+ /* style du main */
+main {
+  width:100%;
+  height: 100%;
+  display: flex;
+}
+
+
+/* style du aside */
+nav{
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  height: 95%;
+  width: 20%;
+  margin: 1% 0 0 1%;
+}
+
+/* style des logo dans la nav  */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+    
+} 
+/* style du logo home */
+.logo .logo-text{
+  position:absolute;
+  cursor: pointer;
+  top: 3%;
+  left: 20% ;
+
+  transform: translate(-50%, -50%);
+   opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  
+}
+.logo:hover .logo-text{
+  opacity: 1;
+  background-color: black;
+    border: 1px solid blanchedalmond;
+    color: white;
+}
+
+
+
+ .logo a img{
+  text-align: center;
+}
+
+
+
+.menu-icon{
+  display: none;
+  cursor: pointer;
+    height: 50%;
+    width: 75%;
+    font-size: 200%;
+    padding-right: 10%;
+} 
+
+/*    
+ nav .logo .bx-home-alt {
+    
+    width: 3rem;
+   
+    font-size: 2.5rem;
+    margin: 0.5em;
+}   */
+ 
+.login_logo {
+   width: 55%;
+   height: 35%;
+   cursor: pointer;
+  
+   
+}  
+
+nav .sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 75%;
+}
+
+nav a {
+  cursor: pointer;
+  color: black;
+  white-space: nowrap;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  display: flex;
+  width: 80%;
+  border: 1px solid rebeccapurple;
+  border-radius: 0.5em;
+  box-shadow: 0.1rem 0.1em 0.1rem rebeccapurple;
+  transition: margin-top 0.5s ease-in-out .5s; 
+  margin: 4%;
+  padding: 0.3% 0.1%;
+}
+
+a .bx{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #707070;
+  padding: 0.3rem 0; 
+  margin-left: 0.2rem; 
+}
+
+a .link-nanav .sidebar-contentme {
+  margin-left: 1rem;
+  text-transform: capitalize;
+  font-weight: 500; 
+  font-size: 15px;
+}
+
+a:hover{
+  background: linear-gradient(141deg, rgba(146,219,200,1) 27%, rgba(153,149,242,1) 56%, rgba(174,108,255,1) 88%);
+  transition: transform 0.5s ease-in-out .5s; 
+  animation: anime ease-in-out, color ease-in-out infinite;
+  animation-duration: .5s, 2s;
+  font-weight: 500;
+}
+
+@keyframes color {
+  0%{
+    background: linear-gradient(141deg, rgba(146,219,200,1) 27%,
+     rgba(153,149,242,1) 56%,
+      rgba(174,108,255,1) 88%);
+  }
+  25%{
+   background: linear-gradient(141deg, rgba(174,108,255,1) 27%,
+     rgba(146,219,200,1) 56%,
+      rgba(153,149,242,1) 88%);
+  }
+  50%{
+    
+    background: linear-gradient(141deg, rgba(153,149,242,1) 27%,
+     rgba(174,108,255,1) 56%, 
+     rgba(146,219,200,1) 88%);
+  }
+  75%{
+    background: linear-gradient(141deg, rgba(174,108,255,1) 27%,
+    rgba(146,219,200,1) 56%,
+     rgba(153,149,242,1) 88%);
+  }
+  100%{
+    background: linear-gradient(141deg, rgba(146,219,200,1) 27%,
+    rgba(153,149,242,1) 56%,
+     rgba(174,108,255,1) 88%);
+  }   
+} 
+
+@keyframes anime {
+ 0%{
+   transform: translate(0, 0);
+ }
+ 25%{
+   transform: translate(10px, 0);
+ }
+ 50%{
+   transform: translate(10px, 10px);
+ }
+ 75%{
+   transform: translate(0px, 10px);
+ }
+ 100%{
+   transform: translate(0px, 0px);
+ }
+}
+
+
+/* style de article */
+article {
+  width: 80%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: 1% 0 0 1%;
+}
+
+header {
+  height: 14%;
+  background-color:#92D5CB ;
+  border-radius: 1rem;
+  color: #fff;
+  width: 96%;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;    
+}
+ header .header-content{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+header .header-content .top-bar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  width: 18em;
+  height: 5rem
+}
+
+.top-bar p, .trait {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+header .top-bar2img{
+ 
+   width: 5vw;
+   height: 5vw;
+   border-radius: 50%;
+   background-image: url(images/mary);
+    overflow: hidden;
+   background-position: 57% 10%;
+   background-size: 250%;
+   background-repeat: no-repeat;
+
+  
+}
+
+.top-bar2 {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-right: 2rem; 
+  gap: 5%;
+
+}
+
+
+
+
+
+/* style de la section */
+  section{
+  display: flex;
+   background-color: rgb(135, 132, 138);
+   border-radius: 1rem;
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+   border-radius: 1rem;
+   border: 1px solid black;
+   width: 96%;
+   height: 72%;
+   background-color: rgb(193, 149, 236) 172;
+   margin: 0.5% 0 0.5% 0;
+} 
+
+section .name {
+  border: 2px solid #92D5CB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+  width: 33%;
+  height: 90%;
+  border-radius: 1rem;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+
+.name-image{
+  margin-top: 2rem;
+   width: 15vw;
+   height: 15vw;
+   border-radius: 50%;
+   background-image: url(images/mary);
+   background-color: aqua;
+    overflow: hidden;
+   background-position: 55% 10%;
+   background-size: 200%;
+   background-repeat: no-repeat;
+
+
+
+}
+
+section .name p {
+  font-weight: 800;
+  font-size: 135%;
+  box-shadow:  3px 9px 10px 5px rgba(0, 1, 0, 0.5);
+} 
+
+section .address{
+  width:60% ;
+  height: 90%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+section .address-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  border: 2px solid #92D5CB;
+  border-radius: 1rem;
+  height: 100%;
+  padding: 1.5rem;
+  gap: 1rem;
+ 
+}
+
+.address-content hr {
+  border: 1px solid rebeccapurple;
+}
+
+ .address-content .contact p {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.name{
+  width: 200%;
+
+} 
+
+
+
+
+
+/* style du footer */
+footer {
+  display: flex;
+  align-items: center;
+  width: 96%;
+  height: 14%;
+  background-color:#92D5CB ;
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;  
+}
+ 
+.icons {
+display: flex;
+justify-content: center;
+align-items: center;
+} 
+
+.icons .bx{
+  color: black;
+  margin: 0.3rem;
+}
+.content-footer p {
+  margin-top: 1rem;
+  text-align: center;
+  color: black;
+  font-weight: 500;
+  margin-right: 2rem;
+  margin-bottom: 2%;
+}
+
+footer span{
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  color: black;
+  font-weight: 700;
+  padding: 1.9rem 1rem ;
+  animation: myanim 4s linear 1s infinite alternate both;
+
+ } 
+
+ @keyframes myanim {
+	0% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+		transform-origin: 100% 50%;
+    font-size: 15px;
+	}
+
+	100% {
+		opacity: 0;
+		transform: rotate(-540deg) scale(0);
+		transform-origin: 100% 50%;
+    font-size: 15px;
+	}
+  
+} 
+
+.content-footer{
+  width: 100%;
+}
+
+.content-footer hr{
+width: 100%;
+ border: 1px solid rebeccapurple;
+}
+
+ /*****iframe style*******************************/
+  
+iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+
+
+
+/*  media query*********************************** **/
+
+@media screen and (max-width:1612px) and (min-width:1588px) {
+  nav{
+    width: 110%;
+  }
+  nav a{
+    width: 90%;
+  }
+  a .link-name{
+    font-size:  10px;
+  }
+
+}
+@media screen and (max-width:1588px)  and (min-width:768px) {
+
+  nav a{
+    padding: 1% 4%;
+   
+    
+  }
+  a .link-name{
+   white-space: wrap;
+  }
+  .contact p span{
+    font-size: 20px;
+  }
+  
+}
+
+/**************************************************************/
+
+
+
+
+@media screen and (max-width:768px){
+
+nav{
+  width: 110%;
+}
+  nav a{
+    width: 100%;
+    padding: 2% 3%;
+    
+  }
+  a .link-name{
+    white-space: wrap;
+    margin-left: 0;
+    
+  }
+  .contact p span{
+    font-size: 13px;
+  }
+  .name p{
+    font-size: 20px;
+  
+  }
+
+  .name{
+    width: 100%;
+  }
+  section{
+    flex-direction: column;
+    width: 90%;
+    
+  }
+  header{
+    width: 90%;
+  }
+  footer{
+    width: 90%;
+  }
+  section .name{
+    width: 95%;
+    height: 39%;
+  }
+  section .address{
+    width: 95%;
+    height: 57%;
+   
+  }
+
+  .address-content .contact p {
+    font-size: 15px;
+  }
+
+  .top-bar p, .trait {
+    font-size: 1rem;
+    margin: 2%;
+  }
+
+  .content-footer p{
+    margin-top: 0;
+  }
+
+  a .bx{
+    margin-left: 0.1%;
+  }
+
+ /***********************************************************/
+}
+@media screen and (max-width:414px) and (min-width:295px){
+  nav{
+    width: 100%;
+    height: 15%;
+  }
+
+  nav a{ 
+    padding: 1% 0;
+    margin: 1%;
+    margin-right: 2%;
+
+  }
+  
+  main{
+    flex-direction: column;
+  }
+
+  nav .sidebar-content{
+
+     display: none; 
+    height: 80%;
+   width: 95%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    
+  }
+   a .link-name{
+   font-size: 20px;
+   color: #fff;
+  } 
+
+
+   header{
+    width: 123%;
+    height: 10%;
+    font-size: 20%; 
+   }
+   header .header-content{
+    margin-top: -4%;
+   }
+  
+
+
+   section{
+    width: 123%;
+    height: 100%;
+   }
+
+
+   footer{
+    flex-direction: column;
+    width: 123%;
+   /*  display: none; */
+
+   }
+   footer p{
+    margin: 0;
+   
+   }
+   .top-bar p, .trait{
+    font-size: 1rem;
+    margin-right:15%;
+   }
+   .menu-icon{
+    display: block;
+    cursor: pointer;
+    height: px;
+    width: 25px;
+    margin: 5px 0;
+    margin: 5px 0;
+   }
+
+   
+}
+
+  
